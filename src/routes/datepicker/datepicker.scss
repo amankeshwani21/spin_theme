@@ -1,0 +1,305 @@
+@import "~@owczar/spin-template/src/scss/bootstrap/variables";
+.datepicker{
+     position: relative;
+}
+.calendar {
+  font-family: 'Trebuchet MS', sans-serif;
+  position:absolute;
+  top: 18px;
+  left: 3px;
+  width: 230px;
+  
+  border: solid 1px #eee;
+  background: rgb(32, 34, 38);
+}
+.datepicker__input {
+  position: relative;
+  width: 100%;
+  background-color: rgb(11, 12, 14);
+  display: inline-block;
+  color: rgb(159, 167, 179);
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+border: none;
+background: none;
+ 
+  outline: none;
+
+}
+.main {
+  background: rgb(20, 22, 25) none repeat scroll 0% 0%;
+  box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+  z-index: 1030;
+  width: 546px;
+  border-radius: 2px;
+  border: 1px solid rgb(52, 52, 54);
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-left:500px;
+}
+.main_bottom {
+  border-top: 1px solid rgb(32, 34, 38);
+  padding: 11px;
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+}
+.mainbottom_time {
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+}
+.mainbottomtime_left {
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: baseline;
+  align-items: baseline;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+}
+.mainbleft {
+  font-weight: 400;
+  text-overflow: ellipsis;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+  color: #c7d0d9;
+  font-size: 14px;
+}
+.mainbmiddle {
+  margin-left: 7px;
+}
+.mainbright {
+  font-weight: normal;
+  font-size: 12px;
+  color: rgb(123, 128, 135);
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+.mainbottom_utc {
+  font-weight: normal;
+  font-size: 12px;
+  white-space: normal;
+  color: rgb(199, 208, 217);
+  background: rgb(32, 34, 38) none repeat scroll 0% 0%;
+  padding: 2px 5px;
+  border-radius: 2px;
+  margin-left: 4px;
+}
+.mainbtn {
+  margin-left: 8px;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  padding: 0px 8px;
+  height: 24px;
+  line-height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid rgb(44, 50, 53);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgb(32, 34, 38) 0%, rgb(41, 44, 49) 100%) repeat scroll 0%
+    0%;
+  color: rgb(216, 217, 218);
+}
+.mainbtn_inside {
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  cursor: pointer;
+  color: rgb(216, 217, 218);
+}
+.main_box {
+  height: 381px;
+  display: flex;
+}
+.mainbox_left {
+  border-right: 1px solid rgb(32, 34, 38);
+  width: 60%;
+  overflow: hidden;
+  order: 0;
+}
+.mainboxleft_upper {
+  padding-top: 9px;
+  padding-left: 11px;
+  padding-right: 20%;
+}
+.mainbleftup_f {
+  margin-bottom: 11px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(159, 167, 179);
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+}
+.mainbox_input {
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+  color: #c7d0d9;
+  margin-bottom: 16px;
+}
+.mainbinput_label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0px 0px 4px;
+  padding: 0px 0px 0px 2px;
+  color: rgb(159, 167, 179);
+  max-width: 480px;
+}
+.mainbinput_box {
+  width: 100%;
+  height: 32px;
+  border-radius: 2px;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  z-index: 1;
+  background-color: rgb(11, 12, 14);
+  line-height: 1.5;
+  font-size: 14px;
+  color: rgb(199, 208, 217);
+  border: 1px solid rgb(44, 50, 53);
+  text-align: left;
+}
+.applychanges {
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px 16px;
+  height: 32px;
+  line-height: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid rgb(50, 116, 217);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgb(50, 116, 217) 0%, rgb(31, 96, 196) 100%) repeat scroll
+    0% 0%;
+  color: rgb(255, 255, 255);
+}
+
+.applychanges_inside {
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.mainboxleft_lower {
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: end;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+.mainbllower_head {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  padding: 8px 16px 5px 9px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(159, 167, 179);
+}
+.mainbllower_content {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  padding: 7px 9px;
+  border-left: 2px solid rgba(255, 255, 255, 0);
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.5;
+  color: #c7d0d9;
+  font-size:14px;
+}
+.mainbox_right {
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  width: 100%;
+  height: auto;
+  min-height: 0px;
+  max-height: 100%;
+  width: 40% !important;
+  border-right: medium none;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.mainbox_right::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tooglebutton{
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  height: 32px;
+  padding: 0px 8px;
+  border-radius: 2px;
+  line-height: 30px;
+  font-weight: 500;
+  border: 1px solid rgb(44, 50, 53);
+  border-right-width: 1px;
+  white-space: nowrap;
+  color: rgb(123, 128, 135);
+  background-color: rgb(20, 22, 25);
+  margin-left: 830px;
+  margin-bottom: 5px;
+}
+.tooglebtntext{
+-moz-box-flex: 1;
+flex-grow: 1;
+display: none;
+padding-left: 8px;
+padding-right: 4px;
+font-size: 22px;
+}
+
+.togglebtntext_inside{
+  display: flex;
+-moz-box-align: center;
+align-items: center;
+white-space: nowrap;
+font-size: 22px;
+font-weight: 400;
+line-height: 1.5;
+font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+}
